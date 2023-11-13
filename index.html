@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Liquide Froid</title>
+    <style>
+        /* Réinitialisation des styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styles globaux */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #e40613;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre sous le header */
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px; /* Réduit l'écart entre les deux éléments */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style de la fenêtre de téléchargement */
+        .download-window {
+        margin-left: 450px;
+        padding: 10px;
+        max-width: 50%; /* Ajuster la largeur pour contrôler l'espace entre les éléments */
+        
+   
+}
+
+        /* Style du paragraphe encadré */
+        .download-paragraph {
+            text-align: center;
+        }
+
+        .download-paragraph p {
+            text-align: center;
+        }
+
+        /* Style du bouton de téléchargement */
+        .download-button {
+            background-color: #e40613;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold; /* Texte en gras */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Ombre portée plus prononcée */
+            transition: color 0.4s; /* Transition pour la couleur du texte */
+        }
+
+        .download-button:hover {
+            background-color: #fff;
+            color: #000; /* Texte en noir au survol */
+        }
+
+        /* Style de la vidéo en arrière-plan */
+        .video-container {
+            width: 60%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px; /* Coins arrondis */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre portée */
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Style du pied de page */
+        footer {
+            background-color: #e40613;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Ombre sous le footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Liquide Froid">
+    </header>
+    <main>
+        <div class="download-window">
+            <div class="download-paragraph">
+                <br>
+                <p>Salut! C'est Gotli ! Ton narrateur augmenté !<br>Ici chez <b>Liquide Froid</b> on te propose de vivre une superbe aventure pas banale! Eh oui, en téléchargeant l'application, là, juste en dessous, tu pourras voir notre numéro spécial stage en réalité augmentée !<br>Je serai là, avec toi, pour te faire découvrir les coulisses du stage de Kévin Forest, un étudiant qui a fait son stage à Fluide Glacial !</p>
+            </div>
+            <br>
+            <h2>Téléchargez l'Application de Réalité Augmentée</h2>
+            <p>Téléchargez cette application pour découvrir votre magazine en réalité augmentée !</p>
+            <a class="download-button" href="liquide-froid-app.zip" download>Télécharger</a>
+        </div>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="LogoAnim.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Liquide Froid</p>
+    </footer>
+</body>
+</html>
